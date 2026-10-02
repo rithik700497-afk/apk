@@ -1,0 +1,6 @@
+{
+  "appId": "com.swiz.delivery",
+  "appName": "Swiz Delivery",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}

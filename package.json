@@ -1,0 +1,14 @@
+{
+  "name": "swiz-delivery-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Android wrapper (Capacitor) for the Swiz Delivery web app",
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  }
+}
