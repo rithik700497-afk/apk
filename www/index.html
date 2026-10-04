@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#F6FBF2">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 1024%22 width=%221024%22 height=%221024%22%3E  %3Cdefs%3E    %3ClinearGradient id=%22lg-bg%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22#103322%22/%3E%3Cstop offset=%221%22 stop-color=%22#04170D%22/%3E%3C/linearGradient%3E    %3ClinearGradient id=%22lg-leaf%22 x1=%220%22 y1=%221%22 x2=%221%22 y2=%220%22%3E%3Cstop offset=%220%22 stop-color=%22#4F9F33%22/%3E%3Cstop offset=%221%22 stop-color=%22#7DCB4F%22/%3E%3C/linearGradient%3E    %3ClinearGradient id=%22lg-or%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%220%22%3E%3Cstop offset=%220%22 stop-color=%22#F28A2E%22/%3E%3Cstop offset=%221%22 stop-color=%22#F59A3D%22/%3E%3C/linearGradient%3E  %3C/defs%3E  %3Crect width=%221024%22 height=%221024%22 rx=%22230%22 fill=%22url(#lg-bg)%22/%3E  %3Cg transform=%22translate(-12 -30) scale(1.0745) translate(-4 6)%22%3E    %3Cg fill=%22url(#lg-or)%22%3E      %3Crect x=%22274%22 y=%22390%22 width=%22112%22 height=%2240%22 rx=%2220%22/%3E      %3Crect x=%22228%22 y=%22468%22 width=%22162%22 height=%2242%22 rx=%2221%22/%3E      %3Cellipse cx=%22200%22 cy=%22488%22 rx=%2213%22 ry=%2215%22/%3E      %3Crect x=%22155%22 y=%22548%22 width=%22322%22 height=%2244%22 rx=%2222%22/%3E      %3Crect x=%22250%22 y=%22628%22 width=%22134%22 height=%2240%22 rx=%2220%22/%3E    %3C/g%3E    %3Cpath d=%22M588 356 C566 334 470 322 466 402 C462 486 662 466 668 566 C674 654 566 690 470 668%22 fill=%22none%22 stroke=%22#FBF8F1%22 stroke-width=%22104%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E    %3Cpath d=%22M640 398 C624 300 690 214 785 182 C792 282 736 386 648 420 Z%22 fill=%22url(#lg-leaf)%22/%3E    %3Cpath d=%22M652 412 C668 344 690 304 716 286%22 fill=%22none%22 stroke=%22#2F7A25%22 stroke-width=%229%22 stroke-linecap=%22round%22/%3E  %3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="prefetch" as="image" href="assets/swiz-login-background.webp" type="image/webp">
 <link rel="preload" as="image" href="assets/swiz-splash-background.webp" type="image/webp" fetchpriority="high">
 <link rel="prefetch" as="image" href="assets/swiz-otp-background.webp" type="image/webp">
@@ -1832,8 +1834,8 @@ input:focus-visible, textarea:focus-visible{ outline:none; }
   position:relative; z-index:1; flex-shrink:0;
   width:min(92%, 460px); margin:-26px auto calc(12px + var(--safe-bottom,0px));
   padding:16px 18px 16px; border-radius:28px;
-  background:rgba(255,255,255,.96);
-  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  background:rgba(255,255,255,.985);
+  
   box-shadow:0 26px 60px -28px rgba(11,70,35,.42), 0 2px 6px rgba(11,70,35,.05);
 }
 .al-mode-input{ position:absolute; opacity:0; width:1px; height:1px; pointer-events:none; }
@@ -1967,8 +1969,8 @@ input:focus-visible, textarea:focus-visible{ outline:none; }
 /* ---- card ---- */
 .sw-card{
   position:relative; z-index:1; flex-shrink:0; width:min(92%, 460px); margin:calc(-1 * var(--ov,26px)) auto calc(16px + var(--safe-bottom,0px));
-  padding:20px 18px 18px; border-radius:28px; background:rgba(255,255,255,.96);
-  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  padding:20px 18px 18px; border-radius:28px; background:rgba(255,255,255,.985);
+  
   box-shadow:0 26px 60px -28px rgba(11,70,35,.42), 0 2px 6px rgba(11,70,35,.05);
 }
 .sw-h{ font-size:clamp(22px, 6.3vw, 29px); line-height:1.15; font-weight:800; letter-spacing:-.02em; color:var(--sw-head); }
@@ -2119,6 +2121,128 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 #screen-preference .sw-art::before{ background-image:url('assets/swiz-preference-background.jpg'); background-image:image-set(url('assets/swiz-preference-background.webp') type('image/webp'), url('assets/swiz-preference-background.jpg') type('image/jpeg')); }
 #screen-splash{ background-image:url('assets/swiz-splash-background.jpg'); background-image:image-set(url('assets/swiz-splash-background.webp') type('image/webp'), url('assets/swiz-splash-background.jpg') type('image/jpeg')); }
 </style>
+
+<style id="swiz-motion">
+/* =========================================================
+   MOTION + 3D LAYER  (loaded last)
+   Everything here animates transform/opacity only (GPU-friendly), nothing loops,
+   and it all switches off under prefers-reduced-motion.
+   ========================================================= */
+button, a, label, [onclick], .nav-item{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; }
+.screen, .scroll-area{ -webkit-overflow-scrolling:touch; overscroll-behavior-y:contain; }
+
+/* ---- screen transitions: depth + direction (forward slides in from the right, back from the left) ---- */
+.screen{
+  opacity:0; visibility:hidden;
+  transform:perspective(1200px) translate3d(30px,0,0) rotateY(-4deg) scale(.985);
+  transition:opacity .30s var(--ease), transform .40s var(--ease), visibility 0s linear .40s, background-color .4s ease;
+}
+html[data-dir="back"] .screen{ transform:perspective(1200px) translate3d(-30px,0,0) rotateY(4deg) scale(.985); }
+.screen.active{
+  opacity:1; visibility:visible; transform:none;
+  transition:opacity .30s var(--ease), transform .40s var(--ease), visibility 0s, background-color .4s ease;
+}
+
+/* ---- list/card entrance: tilts up out of the page ---- */
+@keyframes cardIn{ from{ opacity:0; transform:perspective(700px) translate3d(0,16px,0) rotateX(9deg); } to{ opacity:1; transform:none; } }
+@keyframes fadeUp{ from{ opacity:0; transform:translate3d(0,10px,0); } to{ opacity:1; transform:none; } }
+
+/* ---- 3D press: tactile, with a visible "thickness" under the button ---- */
+#screen-login .auth-cta.al-cta, .sw-cta, #screen-otp .auth-cta.sw-cta, #screen-name .auth-cta.sw-cta{
+  background-image:linear-gradient(180deg, rgba(255,255,255,.24) 0%, rgba(255,255,255,0) 48%), linear-gradient(100deg,#2E8B47 0%,#146C37 58%,#0B5A2C 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.38), inset 0 -2px 0 rgba(0,0,0,.16), 0 5px 0 #07401D, 0 16px 22px -10px rgba(11,90,44,.6);
+  transition:transform .12s var(--ease), box-shadow .12s var(--ease), filter .2s ease;
+}
+#screen-login .auth-cta.al-cta:active:not(:disabled), .sw-cta:active:not(:disabled), #screen-otp .auth-cta.sw-cta:active:not(:disabled), #screen-name .auth-cta.sw-cta:active:not(:disabled){
+  transform:translate3d(0,4px,0);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.3), inset 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 #07401D, 0 6px 12px -8px rgba(11,90,44,.6);
+}
+.btn-primary{
+  background-image:linear-gradient(180deg, rgba(255,255,255,.28) 0%, rgba(255,255,255,0) 50%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4), inset 0 -2px 0 rgba(0,0,0,.12), 0 4px 0 var(--accent-deep), 0 12px 18px -10px rgba(11,90,44,.5);
+  transition:transform .12s var(--ease), box-shadow .12s var(--ease), filter .2s ease;
+}
+.btn-primary:active{ transform:translate3d(0,3px,0); box-shadow:inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 var(--accent-deep), 0 5px 10px -8px rgba(11,90,44,.5); filter:none; }
+.add-circle{ box-shadow:inset 0 1px 0 rgba(255,255,255,.4), 0 3px 0 var(--accent-deep), 0 8px 12px -6px rgba(11,90,44,.45); transition:transform .12s var(--ease), box-shadow .12s var(--ease); }
+.add-circle:active{ transform:translate3d(0,2px,0) scale(.96); box-shadow:inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 var(--accent-deep); }
+
+/* ---- cards: layered elevation + tilt toward the finger (pointer script sets --rx/--ry) ---- */
+.food-card, .gcard, .vendor-card, .flash-card, .cart-item, .order-card, .addr-card, .sw-pref-card, .profile-orders, .notif-row, .vendor-item-row, .search-result-vendor{
+  transform:perspective(700px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
+  transition:transform .35s var(--ease), box-shadow .3s ease, border-color .2s ease; transform-style:preserve-3d;
+}
+.food-card, .gcard, .vendor-card, .flash-card, .cart-item, .order-card, .addr-card, .profile-orders{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95), 0 10px 20px -14px rgba(15,42,26,.34), 0 2px 5px rgba(15,42,26,.05);
+}
+.is-pressed{ transform:perspective(700px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(.972) !important; transition:transform .1s ease-out !important; box-shadow:0 4px 10px -8px rgba(15,42,26,.4) !important; }
+@media (hover:hover){
+  .food-card:hover, .gcard:hover, .vendor-card:hover, .flash-card:hover{ transform:perspective(700px) translate3d(0,-3px,0); box-shadow:inset 0 1px 0 #fff, 0 18px 28px -16px rgba(15,42,26,.4); }
+}
+
+/* ---- image slots: SWIZ mark on the plate until real photos exist (emoji are gone) ---- */
+.food-card .thumb::before, .gcard .thumb::before, .vendor-card .thumb::before, .flash-card .thumb::before,
+.cart-item .thumb::before, .vendor-item-row .thumb::before, .vendor-cover .em::before, .item-hero .em::before, .search-result-vendor .em::before{
+  background:url('assets/swiz-mark.webp') center / 58% auto no-repeat, radial-gradient(circle at 32% 26%, #FFFFFF 0%, #EEF6E8 100%);
+  box-shadow:0 0 0 calc(var(--plate)*.09) rgba(255,255,255,.45), 0 12px 18px -12px rgba(15,42,26,.45), inset 0 -3px 6px rgba(15,42,26,.06);
+}
+[data-theme="dark"] .food-card .thumb::before, [data-theme="dark"] .gcard .thumb::before, [data-theme="dark"] .vendor-card .thumb::before,
+[data-theme="dark"] .flash-card .thumb::before, [data-theme="dark"] .cart-item .thumb::before, [data-theme="dark"] .vendor-item-row .thumb::before,
+[data-theme="dark"] .vendor-cover .em::before, [data-theme="dark"] .item-hero .em::before, [data-theme="dark"] .search-result-vendor .em::before{
+  background:url('assets/swiz-mark.webp') center / 58% auto no-repeat, radial-gradient(circle at 32% 26%, #F4FAF0 0%, #DDEBD6 100%);
+}
+.categories .catpill{ white-space:nowrap; }
+
+/* ---- icons that replaced emoji ---- */
+.rt{ width:14px; height:14px; margin-right:2px; vertical-align:-2px; color:#E9A100; fill:currentColor; stroke:none; }
+.i-xs{ margin-right:3px; vertical-align:-3px; }
+.empty-cart .em .i, .order-empty .em .i, .search-empty .em .i, .addr-empty .em .i{ width:38px; height:38px; color:var(--accent-deep); }
+.payment-icon-success .i, .payment-icon-fail .i{ width:42px; height:42px; }
+.payment-icon-success .i{ color:#2B7A2E; } .payment-icon-fail .i{ color:var(--danger); }
+.notif-row .ic .i{ width:22px; height:22px; color:var(--accent-deep); }
+.addr-card .tag .i{ margin-right:4px; }
+.hd-left{ display:flex; align-items:center; gap:10px; min-width:0; flex:1; }
+.head-actions{ flex:none; }
+.hd-left .greet{ min-width:0; flex:1; }
+.hd-left .greet .eyebrow, .hd-left .greet .addr{ display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.hd-left .greet .addr{ font-size:15.5px; }
+.hd-left .greet .addr .i{ vertical-align:-3px; }
+.hd-logo{ flex:none; height:32px; width:auto; filter:drop-shadow(0 4px 6px rgba(15,42,26,.22)); }
+.app-foot{ display:flex; justify-content:center; margin:26px 0 0; opacity:.95; }
+.app-foot img{ width:104px; height:auto; }
+@media (max-width:340px){ .hd-logo{ display:none; } }
+
+/* ---- bottom nav: active tab lifts ---- */
+.nav-item .i{ transition:transform .28s var(--ease); }
+.nav-item.on .i{ transform:translate3d(0,-2px,0) scale(1.14); }
+.nav-item.on::before{ animation:navBar .3s var(--ease) both; }
+@keyframes navBar{ from{ transform:scaleX(.2); opacity:0; } to{ transform:none; opacity:1; } }
+
+/* ---- splash + onboarding hero: gentle 3D settle-in ---- */
+#screen-splash.active{ animation:spFade .5s ease both; }
+.screen.active .sp-loader{ animation:alRise .6s var(--ease) .25s both; }
+@keyframes spFade{ from{ opacity:0; transform:scale(1.03); } to{ opacity:1; transform:none; } }
+@keyframes alRise{ from{ opacity:0; transform:perspective(900px) translate3d(0,18px,0) rotateX(8deg); } to{ opacity:1; transform:none; } }
+.screen.active .sw-art, .screen.active .al-hero{ animation:alFade .8s ease both; }
+@keyframes alFade{ from{ opacity:0; transform:scale(1.04) translate3d(0,-6px,0); } to{ opacity:1; transform:none; } }
+
+/* ---- toast ---- */
+.swiz-toast{
+  position:fixed; left:50%; bottom:calc(92px + var(--safe-bottom,0px)); z-index:200; max-width:86vw; padding:11px 18px;
+  border-radius:999px; background:#0F2A1A; color:#fff; font-size:13.5px; font-weight:600; line-height:1.3; text-align:center;
+  box-shadow:0 14px 28px -12px rgba(0,0,0,.5); opacity:0; pointer-events:none;
+  transform:translate3d(-50%,14px,0) scale(.96); transition:opacity .24s ease, transform .3s var(--ease);
+}
+.swiz-toast.show{ opacity:1; transform:translate3d(-50%,0,0) scale(1); }
+
+/* ---- content-visibility keeps long lists cheap to scroll ---- */
+.vendor-item-row, .order-card, .notif-row, .cart-item{ content-visibility:auto; contain-intrinsic-size:auto 112px; }
+
+@media (prefers-reduced-motion:reduce){
+  .screen, .screen.active{ transition:opacity .15s linear !important; transform:none !important; }
+  .nav-item.on .i{ transform:none; } #screen-splash.active, .sw-art, .al-hero, .sp-loader{ animation:none !important; }
+  .food-card, .gcard, .vendor-card, .flash-card{ transition:none; }
+}
+</style>
 </head>
 <body data-theme="light" data-mode="food">
 
@@ -2196,6 +2320,10 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     <symbol id="i-venus" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.2"/><path d="M12 14.2V21M8.8 18h6.4"/></symbol>
     <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.8-3.2 3-4.8 6-4.8s5.2 1.6 6 4.8"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.9c1.7.6 2.7 2.1 3.2 4.6"/></symbol>
     <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6.2"/><circle cx="12" cy="12" r="2.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M3 10h18M7 15h3"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4.5 8V6.8A1.8 1.8 0 0 1 6.3 5H17v3"/><rect x="3.5" y="8" width="17" height="11.5" rx="2.6"/><path d="M16.2 13.7h.01"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4L12 4Z"/><path d="M12 10v4.2M12 17h.01"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></symbol>
   </defs>
 </svg>
 
@@ -2372,8 +2500,8 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
         <div class="al-copy">
           <h1 id="alHeading" class="al-h">
-            <span class="al-m-login">Welcome Back <span class="al-wave" aria-hidden="true">&#128075;</span></span>
-            <span class="al-m-signup">Create Account <span class="al-wave" aria-hidden="true">&#10024;</span></span>
+            <span class="al-m-login">Welcome Back</span>
+            <span class="al-m-signup">Create Account</span>
           </h1>
           <p class="al-sub">
             <span class="al-m-login">Login to continue to SWIZ Delivery</span>
@@ -2464,10 +2592,13 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
       <div class="app-header">
         <div class="row1">
-          <button type="button" class="greet" onclick="goTo('addresses')" aria-label="Choose delivery address">
-            <span class="eyebrow">Deliver to</span>
-            <span class="addr"><svg class="i i-sm" aria-hidden="true"><use href="#i-pin"/></svg>Saved addresses<svg class="i i-xs" aria-hidden="true"><use href="#i-chev-d"/></svg></span>
-          </button>
+          <div class="hd-left">
+            <img class="hd-logo" src="assets/swiz-mark.webp" alt="SWIZ Delivery" width="42" height="33" decoding="async">
+            <button type="button" class="greet" onclick="goTo('addresses')" aria-label="Choose delivery address">
+              <span class="eyebrow">Deliver to</span>
+              <span class="addr"><svg class="i i-sm" aria-hidden="true"><use href="#i-pin"/></svg>Saved addresses<svg class="i i-xs" aria-hidden="true"><use href="#i-chev-d"/></svg></span>
+            </button>
+          </div>
           <div class="head-actions">
             <button type="button" class="circle-btn" onclick="goTo('notifications')" aria-label="Notifications">
               <svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>
@@ -2824,6 +2955,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
       <button class="btn btn-logout replay-btn" onclick="logout()"><svg class="i i-sm" aria-hidden="true"><use href="#i-logout"/></svg>Log out</button>
       <button class="btn btn-ghost replay-btn replay-setup" onclick="goSplashReplay()">Replay first-launch setup</button>
+      <div class="app-foot"><img src="assets/swiz-logo-full.webp" alt="SWIZ Delivery" width="110" height="118" loading="lazy" decoding="async"></div>
       <div style="height:34px; flex-shrink:0"></div>
     </section>
 
@@ -3243,35 +3375,79 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       if(typeof fn === 'function') fn();
     }
 
-    // Forward navigation. Pushes the current screen onto a real history
-    // stack (and onto browser history via pushState) so `back()` and the
-    // browser/hardware back button both do the right thing — no dead ends.
+    // Forward navigation. The browser history mirrors the app's own stack, so the phone's
+    // hardware Back button, the browser Back button and every on-screen back arrow all travel
+    // the same path (history.back -> popstate) and walk back ONE screen at a time.
+    //  * tab <-> tab moves replace the entry (tabs are siblings, not a trail)
+    //  * arriving at a root screen (Home / first onboarding screen) lays a "guard" entry beneath it:
+    //    Back at a root shows "Press back again to exit" instead of silently closing the app.
+    const AUTH_SCREENS = ['splash','onboard','login','otp','name','location','preference'];
+    const TAB_SCREENS  = ['home','categories','orders','profile'];
+    const SID = Math.random().toString(36).slice(2);   // tells this page-load's entries from stale ones left by a reload
+    let histIdx = 0, exitArmedAt = 0;
+    function pushEntry(state, hash){
+      histIdx++;
+      try { history.pushState(Object.assign({ sid:SID, i:histIdx }, state), '', '#' + hash); } catch(e){}
+    }
+    function setDir(d){ try { document.documentElement.setAttribute('data-dir', d); } catch(e){} }
+    try { history.replaceState({ sid:SID, i:0, guard:true }, '', location.pathname + location.search); } catch(e){}
+
     function go(name, opts={}){
       if(!SCREENS[name]){ console.warn('Router: unknown screen "'+name+'"'); return; }
-      if(!opts.replace && App.state.screen !== name){
-        App.state.history.push(App.state.screen);
-      }
+      const cur = App.state.screen;
+      const inAuth = AUTH_SCREENS.indexOf(cur) > -1;
+      const bothTabs = TAB_SCREENS.indexOf(cur) > -1 && TAB_SCREENS.indexOf(name) > -1;
+      const replace = !!opts.replace || bothTabs || cur === name;
+      const intoRoot = (name === 'home' && inAuth) || (name === 'onboard' && (cur === 'splash' || !inAuth));
+      if(!replace){ App.state.history.push(cur); }
+      if(intoRoot){ App.state.history.length = 0; }
+      setDir(opts.dir || 'fwd');
       App.state.screen = name;
       applyDOM(name);
       runEnterHook(name);
       if(!opts.silent){
-        try { history.pushState({ screen:name }, '', '#'+name); } catch(e){}
+        if(intoRoot){ pushEntry({ guard:true }, 'exit'); pushEntry({ screen:name }, name); }
+        else if(replace){ try { history.replaceState({ sid:SID, i:histIdx, screen:name }, '', '#' + name); } catch(e){} }
+        else { pushEntry({ screen:name }, name); }
       }
       App.emit('screen');
     }
 
     function back(){
+      const st = history.state;
+      if(st && st.sid === SID && !st.guard && App.state.history.length){ history.back(); return; }
       const prev = App.state.history.pop();
-      if(prev){ go(prev, { replace:true }); }
+      if(prev){ go(prev, { replace:true, dir:'back' }); }
     }
 
     window.addEventListener('popstate', (e)=>{
-      const name = (e.state && e.state.screen) || (location.hash || '#'+App.state.screen).slice(1);
-      if(SCREENS[name]){
-        App.state.screen = name;
-        applyDOM(name);
-        runEnterHook(name);
+      const st = e.state;
+      if(!st || st.sid !== SID){ try { history.go(-1); } catch(x){} return; }   // stale entry from before a reload: keep stepping out
+      if(st.guard){
+        const cur = App.state.screen;
+        if(TAB_SCREENS.indexOf(cur) > -1 && cur !== 'home'){        // Back from another tab lands on Home first
+          setDir('back'); App.state.screen = 'home'; applyDOM('home'); runEnterHook('home'); App.emit('screen');
+          pushEntry({ screen:'home' }, 'home'); return;
+        }
+        if(Date.now() - exitArmedAt < 2200){                          // second press: really leave
+          if(window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App && window.Capacitor.Plugins.App.exitApp){ window.Capacitor.Plugins.App.exitApp(); return; }
+          try { history.go(-(st.i + 1)); } catch(x){}
+          return;
+        }
+        exitArmedAt = Date.now();
+        if(typeof window.swizToast === 'function') window.swizToast('Press back again to exit');
+        histIdx = st.i; pushEntry({ screen:cur }, cur);               // stay where we are
+        return;
       }
+      const name = st.screen;
+      if(!SCREENS[name]) return;
+      histIdx = st.i || 0;
+      if(App.state.history[App.state.history.length - 1] === name) App.state.history.pop();
+      setDir('back');
+      App.state.screen = name;
+      applyDOM(name);
+      runEnterHook(name);
+      App.emit('screen');
     });
 
     return { go, back, SCREENS };
@@ -3334,7 +3510,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     let data = null;
     try { data = await res.json(); } catch(e){ /* empty/non-JSON body is fine for some endpoints */ }
     if(!res.ok){
-      throw new Error((data && data.error) || ('Request failed (' + res.status + ')'));
+      throw Object.assign(new Error((data && data.error) || ('Request failed (' + res.status + ')')), { status: res.status });
     }
     return data;
   }
@@ -3355,7 +3531,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         if(API_BASE_URL){
           return apiFetch('/auth/otp/request', { method:'POST', body:{ phone } });
         }
-        await wait(500);
+        await wait(175);
         return { sent:true, phone };
       },
       // `name` is only sent once the customer has been asked for it (see
@@ -3377,7 +3553,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
             customer: res.customer || null
           };
         }
-        await wait(500);
+        await wait(175);
         if(!code || code.length < 4) return { ok:false, reason:'invalid_code' };
         const isReturning = !!(App.state.user && App.state.user.phone === phone);
         // hasSession mirrors "do we already know this person's name" — a
@@ -3393,7 +3569,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
           App.set('user', null);
           return { ok:true };
         }
-        await wait(150);
+        await wait(52);
         App.set('user', null);
         return { ok:true };
       }
@@ -3404,11 +3580,11 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     // polygon/radius for that point.
     Location: {
       async detectCurrent(){
-        await wait(700);
+        await wait(245);
         return { lat:28.6139, lng:77.2090, area:'Sector 21', city:'Gurugram', pin:'122016' };
       },
       async checkServiceable(lat, lng){
-        await wait(200);
+        await wait(70);
         /* MOCK — always serviceable; real service-area rules are backend-owned.
            No matching backend endpoint exists yet for this one — it stays
            mocked in both modes until a real service-area check is built. */
@@ -3594,6 +3770,11 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
   function afterLogin(){
     if(API_BASE_URL){
+      if(App.state.addresses && App.state.addresses.length){
+        // Addresses already cached on this device: go straight in, refresh quietly in the background.
+        goTo(App.state.addresses.some(a=>a.isDefault) ? 'home' : 'location');
+        Services.Addresses.list().then(addresses => { App.state.addresses = addresses; App.savePersisted(); }).catch(() => {});
+      } else
       Services.Addresses.list().then(addresses => {
         App.state.addresses = addresses;
         App.savePersisted();
@@ -3714,11 +3895,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         lng: loc.lng
       };
       if(API_BASE_URL){
-        Services.Addresses.create(addressData).then(saved => {
-          App.state.addresses.push(saved);
-          App.savePersisted();
-          goTo('preference');
-        }).catch(err => { errBox.textContent = err.message; errBox.style.display = 'block'; });
+        addAddressOptimistic(addressData, () => goTo('preference'));
         return;
       }
       App.state.addresses.push(Object.assign({ id: 'addr_' + Date.now(), isDefault: App.state.addresses.length === 0 }, addressData));
@@ -3767,6 +3944,27 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     });
   }
 
+  // Adds an address instantly (temporary id), swaps in the server's copy when it answers,
+  // and rolls back with a message if the server refuses. Nothing waits on the network.
+  function addAddressOptimistic(data, then){
+    const tmpId = 'tmp_' + Date.now();
+    App.state.addresses.push(Object.assign({ id:tmpId, isDefault: App.state.addresses.length === 0 }, data));
+    App.savePersisted();
+    if(then) then();
+    Services.Addresses.create(data).then(saved => {
+      const k = App.state.addresses.findIndex(a=>a.id===tmpId);
+      if(k > -1) App.state.addresses[k] = saved; else App.state.addresses.push(saved);
+      App.savePersisted();
+      if(App.state.screen === 'addresses') renderAddresses();
+    }).catch(err => {
+      App.state.addresses = App.state.addresses.filter(a=>a.id!==tmpId);
+      if(App.state.addresses.length && !App.state.addresses.some(a=>a.isDefault)) App.state.addresses[0].isDefault = true;
+      App.savePersisted();
+      if(App.state.screen === 'addresses') renderAddresses();
+      swizToast("Couldn't save the address: " + err.message);
+    });
+  }
+
   function saveAddress(){
     const name = document.getElementById('addrName').value.trim();
     const phone = document.getElementById('addrPhone').value.trim();
@@ -3790,24 +3988,30 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     };
 
     if(API_BASE_URL){
-      const btn = document.querySelector('#screen-address-form .add-addr-btn');
-      btn.textContent = 'Saving…';
-      const req = editingAddressId ? Services.Addresses.update(editingAddressId, data) : Services.Addresses.create(data);
-      req.then(saved => {
-        btn.textContent = 'Save address';
-        if(editingAddressId){
-          const idx = App.state.addresses.findIndex(a=>a.id===editingAddressId);
-          if(idx > -1) App.state.addresses[idx] = saved;
-        } else {
-          App.state.addresses.push(saved);
-        }
-        App.savePersisted();
-        if(fromOnboardingFlow){ goTo('preference'); } else { goTo('addresses'); }
-      }).catch(err => {
-        btn.textContent = 'Save address';
-        errEl.textContent = err.message;
-        errEl.style.display = 'block';
-      });
+      // Optimistic: show the result straight away, the server confirms in the background.
+      const goNext = () => { if(fromOnboardingFlow){ goTo('preference'); } else { goTo('addresses'); } };
+      if(editingAddressId){
+        const id = editingAddressId;
+        if(String(id).indexOf('tmp_') === 0){ swizToast('Still saving this address…'); return; }
+        const idx = App.state.addresses.findIndex(a=>a.id===id);
+        const before = idx > -1 ? Object.assign({}, App.state.addresses[idx]) : null;
+        if(idx > -1) Object.assign(App.state.addresses[idx], data);
+        App.savePersisted(); goNext();
+        Services.Addresses.update(id, data).then(saved => {
+          const k = App.state.addresses.findIndex(a=>a.id===id);
+          if(k > -1) App.state.addresses[k] = saved;
+          App.savePersisted();
+          if(App.state.screen === 'addresses') renderAddresses();
+        }).catch(err => {
+          const k = App.state.addresses.findIndex(a=>a.id===id);
+          if(k > -1 && before) App.state.addresses[k] = before;
+          App.savePersisted();
+          if(App.state.screen === 'addresses') renderAddresses();
+          swizToast("Couldn't save the changes: " + err.message);
+        });
+        return;
+      }
+      addAddressOptimistic(data, goNext);
       return;
     }
 
@@ -3827,11 +4031,15 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
   function setDefaultAddress(id){
     if(API_BASE_URL){
-      Services.Addresses.setDefault(id).then(() => {
-        App.state.addresses.forEach(a => { a.isDefault = (a.id === id); });
-        App.savePersisted();
-        renderAddresses();
-      }).catch(err => alert(err.message));
+      if(String(id).indexOf('tmp_') === 0){ swizToast('Still saving this address…'); return; }
+      const prevDefault = (App.state.addresses.find(a=>a.isDefault) || {}).id;
+      App.state.addresses.forEach(a => { a.isDefault = (a.id === id); });
+      App.savePersisted(); renderAddresses();
+      Services.Addresses.setDefault(id).catch(err => {
+        App.state.addresses.forEach(a => { a.isDefault = (a.id === prevDefault); });
+        App.savePersisted(); if(App.state.screen === 'addresses') renderAddresses();
+        swizToast("Couldn't change the default address: " + err.message);
+      });
       return;
     }
     App.state.addresses.forEach(a => { a.isDefault = (a.id === id); });
@@ -3842,13 +4050,17 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   function deleteAddress(id){
     if(!confirm('Remove this address?')) return;
     if(API_BASE_URL){
-      Services.Addresses.remove(id).then(() => {
-        const wasDefault = App.state.addresses.find(a=>a.id===id && a.isDefault);
-        App.state.addresses = App.state.addresses.filter(a=>a.id!==id);
-        if(wasDefault && App.state.addresses.length){ App.state.addresses[0].isDefault = true; }
-        App.savePersisted();
-        renderAddresses();
-      }).catch(err => alert(err.message));
+      if(String(id).indexOf('tmp_') === 0){ swizToast('Still saving this address…'); return; }
+      const snapshot = App.state.addresses.map(a => Object.assign({}, a));
+      const wasDefaultAddr = App.state.addresses.find(a=>a.id===id && a.isDefault);
+      App.state.addresses = App.state.addresses.filter(a=>a.id!==id);
+      if(wasDefaultAddr && App.state.addresses.length){ App.state.addresses[0].isDefault = true; }
+      App.savePersisted(); renderAddresses();
+      Services.Addresses.remove(id).catch(err => {
+        App.state.addresses = snapshot; App.savePersisted();
+        if(App.state.screen === 'addresses') renderAddresses();
+        swizToast("Couldn't remove the address: " + err.message);
+      });
       return;
     }
     const wasDefault = App.state.addresses.find(a=>a.id===id && a.isDefault);
@@ -3858,18 +4070,18 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     renderAddresses();
   }
 
-  const LABEL_EMOJI = { Home:'🏠', Work:'💼', Other:'📍' };
+  const LABEL_EMOJI = { Home:'<svg class="i i-xs" aria-hidden="true"><use href="#i-home"/></svg>', Work:'<svg class="i i-xs" aria-hidden="true"><use href="#i-briefcase"/></svg>', Other:'<svg class="i i-xs" aria-hidden="true"><use href="#i-pin"/></svg>' };
   function renderAddresses(){
     const list = document.getElementById('addrList');
     if(!list) return;
     if(App.state.addresses.length === 0){
-      list.innerHTML = `<div class="addr-empty"><div class="em">📍</div><h3>No saved addresses yet</h3><p>Add one so we know where to deliver.</p></div>`;
+      list.innerHTML = `<div class="addr-empty"><div class="em"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></div><h3>No saved addresses yet</h3><p>Add one so we know where to deliver.</p></div>`;
       return;
     }
     list.innerHTML = App.state.addresses.map(a => `
       <div class="addr-card">
         <div class="top">
-          <span class="tag">${LABEL_EMOJI[a.label]||'📍'} ${a.label}</span>
+          <span class="tag">${LABEL_EMOJI[a.label]||LABEL_EMOJI.Other} ${a.label}</span>
           ${a.isDefault ? '<span class="default-badge">DEFAULT</span>' : ''}
         </div>
         <h4>${a.name}</h4>
@@ -3910,7 +4122,9 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   function togglePromoNotifications(){
     // switch shown ON = promos enabled, i.e. promoOptOut === false — flip it
     const newOptOut = !App.state.promoOptOut;
-    Services.Preferences.setPromoOptOut(newOptOut).then(()=>{ renderSettings(); });
+    const prevOptOut = App.state.promoOptOut;
+    App.set('promoOptOut', newOptOut); renderSettings();
+    Services.Preferences.setPromoOptOut(newOptOut).then(()=>{ renderSettings(); }).catch(err => { App.set('promoOptOut', prevOptOut); renderSettings(); swizToast("Couldn't update the setting: " + err.message); });
   }
 
   function replayHomeEntrance(){
@@ -3925,32 +4139,36 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   // ---------- splash -> onboarding ----------
   function startSplash(){
     Router.go('splash', { replace:true, silent:true });
-    setTimeout(()=>{
-      if(API_BASE_URL && getSessionToken()){
-        // Real mode: don't just trust the locally-cached user — verify the
-        // session token is still valid server-side first (it may have
-        // expired since the last visit).
-        apiFetch('/auth/me').then(customer => {
-          App.set('user', { name: customer.name, phone: customer.phone });
-          if(typeof customer.promoOptOut === 'boolean') App.set('promoOptOut', customer.promoOptOut);
-          afterLogin();
-        }).catch(() => {
-          // Token rejected — treat exactly like a logged-out visitor.
-          setSessionToken(null);
-          App.set('user', null);
-          Router.go('onboard', { replace:true });
-        });
-        return;
-      }
+    const t0 = Date.now(), MIN_SPLASH = 800;                 // brand moment, then straight in
+    const after = fn => setTimeout(fn, Math.max(0, MIN_SPLASH - (Date.now() - t0)));
+    const route = () => {
       if(App.state.user){
-        // Mock mode (or real mode with no session token yet): the local
-        // session marker is all there is to check.
         const hasDefault = App.state.addresses.some(a=>a.isDefault);
         Router.go(hasDefault ? 'home' : 'location', { replace:true });
       } else {
         Router.go('onboard', { replace:true });
       }
-    }, 2450);
+    };
+    if(API_BASE_URL){
+      // Wake the API while the splash is showing (free hosting plans put idle servers to sleep).
+      try { fetch(API_BASE_URL + '/health', { cache:'no-store' }).catch(() => {}); } catch(e){}
+      if(getSessionToken()){
+        const verify = apiFetch('/auth/me').then(customer => {
+          App.set('user', { name: customer.name, phone: customer.phone });
+          if(typeof customer.promoOptOut === 'boolean') App.set('promoOptOut', customer.promoOptOut);
+        });
+        const sessionRejected = () => { setSessionToken(null); App.set('user', null); Router.go('onboard', { replace:true }); };
+        if(App.state.user){
+          // Known customer on this device: enter immediately; confirm the session quietly in the background.
+          after(afterLogin);
+          verify.catch(err => { if(err && (err.status === 401 || err.status === 403)) sessionRejected(); });
+        } else {
+          verify.then(() => after(afterLogin)).catch(sessionRejected);
+        }
+        return;
+      }
+    }
+    after(route);
   }
   function goSplashReplay(){ startSplash(); }
 
@@ -4253,7 +4471,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     const footer = document.getElementById('cartFooter');
     const couponBlock = document.getElementById('cartCouponBlock');
     if(cartItems.length === 0){
-      list.innerHTML = `<div class="empty-cart"><div class="em">🛍️</div><h3>Your bag is empty</h3><p>Add tiffins or groceries to get started.</p></div>`;
+      list.innerHTML = `<div class="empty-cart"><div class="em"><svg class="i" aria-hidden="true"><use href="#i-bag"/></svg></div><h3>Your bag is empty</h3><p>Add tiffins or groceries to get started.</p></div>`;
       if(footer) footer.style.display = 'none';
       if(couponBlock) couponBlock.style.display = 'none';
       return;
@@ -4267,7 +4485,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
           <div class="store">${it.vendorName || it.store || ''}</div>
           <h4>${it.name}</h4>
           <div class="price">₹${it.price.toFixed(2).replace(/\.00$/,'')}</div>
-          <div class="free-line">🚴 ${(it.addons&&it.addons.length) ? it.addons.join(', ') : (it.note || 'Fresh & on time')}</div>
+          <div class="free-line">${(it.addons&&it.addons.length) ? it.addons.join(', ') : (it.note || 'Fresh & on time')}</div>
           <div class="row2">
             <div class="qty-stepper">
               <button onclick="changeQty(${i},-1)">−</button>
@@ -4319,7 +4537,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         const res = await apiFetch('/coupons/validate', { method:'POST', body:{ code, mode, subtotal } });
         return res; // shape already matches: { valid, discount?, coupon?, reason? }
       }
-      await wait(350);
+      await wait(122);
       const c = COUPONS.find(c => c.code.toLowerCase() === code.trim().toLowerCase() && c.mode === mode);
       if(!c) return { valid:false, reason:'Invalid or inapplicable coupon code' };
       if(subtotal < c.minOrder) return { valid:false, reason:`Minimum order of ₹${c.minOrder} required for this coupon` };
@@ -4361,7 +4579,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       if(API_BASE_URL){
         return apiFetch('/flash-offers');
       }
-      await wait(250);
+      await wait(88);
       const now = Date.now();
       return FLASH_OFFERS.filter(o => o.startsAt <= now && now <= o.expiresAt && (!mode || (findVendor(o.vendorId)||{}).mode === mode));
     }
@@ -4379,7 +4597,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     const now = Date.now();
     App.set('notifications', [
       { id:'n1', type:'order_status', title:'Order delivered', body:'Your order from Home Kitchen was delivered. Enjoy!', orderId:null, readAt:null, createdAt: now - 3600e3 },
-      { id:'n2', type:'flash_offer', title:'🔥 10-minute flash offer at Punjabi Rasoi', body:'Butter Chicken — ₹149 (was ₹229). Ends soon.', orderId:null, readAt:null, createdAt: now - 5*60000 },
+      { id:'n2', type:'flash_offer', title:'10-minute flash offer at Punjabi Rasoi', body:'Butter Chicken — ₹149 (was ₹229). Ends soon.', orderId:null, readAt:null, createdAt: now - 5*60000 },
       { id:'n3', type:'promo', title:'Weekend sale', body:'Flat ₹100 off on grocery orders above ₹999.', orderId:null, readAt: now - 7200e3, createdAt: now - 86400e3 }
     ]);
   }
@@ -4392,7 +4610,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         return res;
       }
       seedMockNotifications();
-      await wait(150);
+      await wait(52);
       return App.state.notifications;
     },
     async markRead(id){
@@ -4479,7 +4697,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     });
   }
   function notifIcon(type){
-    return { order_status:'📦', payment:'💳', refund:'💰', promo:'🏷️', flash_offer:'🔥' }[type] || '🔔';
+    return { order_status:'<svg class="i" aria-hidden="true"><use href="#i-package"/></svg>', payment:'<svg class="i" aria-hidden="true"><use href="#i-card"/></svg>', refund:'<svg class="i" aria-hidden="true"><use href="#i-wallet"/></svg>', promo:'<svg class="i" aria-hidden="true"><use href="#i-tag"/></svg>', flash_offer:'<svg class="i" aria-hidden="true"><use href="#i-bolt"/></svg>' }[type] || '<svg class="i" aria-hidden="true"><use href="#i-bell"/></svg>';
   }
   function toMs(ts){ return typeof ts === 'number' ? ts : new Date(ts).getTime(); }
   function timeAgo(ts){
@@ -4512,14 +4730,15 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     });
   }
   function openNotification(id){
-    Services.Notifications.markRead(id).then(()=>{
-      renderNotifications();
-      const n = (App.state.notifications||[]).find(n=>n.id===id);
-      if(n && n.orderId){ openOrder(n.orderId); }
-    });
+    const n = (App.state.notifications||[]).find(n=>n.id===id);
+    if(n && !n.readAt){ n.readAt = Date.now(); }
+    Services.Notifications.markRead(id).then(()=>{ renderNotifications(); }).catch(() => {});
+    if(n && n.orderId){ openOrder(n.orderId); } else { renderNotifications(); }
   }
   function markAllNotificationsRead(){
-    Services.Notifications.markAllRead().then(renderNotifications);
+    (App.state.notifications||[]).forEach(n => { if(!n.readAt) n.readAt = Date.now(); });
+    renderNotifications();
+    Services.Notifications.markAllRead().then(renderNotifications).catch(() => {});
   }
 
   function renderHomeFlashOffers(){
@@ -4534,7 +4753,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
           const vendor = findVendor(o.vendorId);
           return `
           <div class="flash-card" data-expires="${o.expiresAt}" data-id="${o.id}">
-            <div class="thumb">${vendor ? vendor.emoji : '🔥'}<span class="timer"><span class="dot"></span><span class="countdown">--:--</span></span></div>
+            <div class="thumb">${vendor ? vendor.emoji : ''}<span class="timer"><span class="dot"></span><span class="countdown">--:--</span></span></div>
             <div class="info">
               <h4>${o.itemName}</h4>
               <div class="vendor">${vendor ? vendor.name : ''}</div>
@@ -4628,7 +4847,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       inputRow.style.display = 'none';
       appliedRow.innerHTML = `
         <div class="coupon-applied">
-          <div><div class="code">🏷️ ${coupon.coupon.code} applied</div><div class="desc">${coupon.coupon.desc}</div></div>
+          <div><div class="code"><svg class="i i-xs" aria-hidden="true"><use href="#i-tag"/></svg> ${coupon.coupon.code} applied</div><div class="desc">${coupon.coupon.desc}</div></div>
           <div class="remove" onclick="removeCoupon('${ctx}')">Remove</div>
         </div>`;
     } else {
@@ -4716,8 +4935,8 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     if(vendor.mode === 'grocery'){
       const dt = App.state.cart.deliveryType || 'instant';
       const summary = dt === 'instant'
-        ? `⚡ Instant delivery · ${vendor.etaMin}-${vendor.etaMax} min`
-        : `📅 Scheduled · ${App.state.cart.scheduleDate === 'tomorrow' ? 'Tomorrow' : 'Today'}, ${(App.state.cart.scheduleSlot||'').replace('-',':00 - ')}:00`;
+        ? `<svg class="i i-xs" aria-hidden="true"><use href="#i-bolt"/></svg> Instant delivery · ${vendor.etaMin}-${vendor.etaMax} min`
+        : `<svg class="i i-xs" aria-hidden="true"><use href="#i-calendar"/></svg> Scheduled · ${App.state.cart.scheduleDate === 'tomorrow' ? 'Tomorrow' : 'Today'}, ${(App.state.cart.scheduleSlot||'').replace('-',':00 - ')}:00`;
       wrap.innerHTML = `
         <div class="head"><h4>Delivery Time</h4><span class="change" onclick="openVendor('${vendor.id}')">Change <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
         <div class="addr-name">${summary}</div>
@@ -4725,7 +4944,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     } else {
       wrap.innerHTML = `
         <div class="head"><h4>Delivery Time</h4></div>
-        <div class="addr-name">🍲 Prepared fresh · arriving in ${vendor.etaMin}-${vendor.etaMax} min</div>
+        <div class="addr-name">Prepared fresh · arriving in ${vendor.etaMin}-${vendor.etaMax} min</div>
       `;
     }
   }
@@ -4834,7 +5053,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         // creates it via Services.Orders.create() before ever calling this.
         return apiFetch('/payments/'+orderId+'/charge', { method:'POST' });
       }
-      await wait(1400);
+      await wait(490);
       const paymentId = 'PAY' + Date.now();
       // Online methods succeed ~88% of the time here so the failure path
       // (Stage 5's "never assume success" requirement) is actually
@@ -4964,13 +5183,13 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       `;
     } else if(state === 'success'){
       wrap.innerHTML = `
-        <div class="payment-icon-success">✅</div>
+        <div class="payment-icon-success"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></div>
         <h2>Payment successful</h2>
         <p>Placing your order…</p>
       `;
     } else {
       wrap.innerHTML = `
-        <div class="payment-icon-fail">⚠️</div>
+        <div class="payment-icon-fail"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></div>
         <h2>Payment failed</h2>
         <p>Your payment via ${methodLabel} couldn't be confirmed. You haven't been charged — try again or use a different method.</p>
         <button class="btn btn-primary" onclick="retryPayment()">Try again</button>
@@ -5119,7 +5338,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         const raw = await apiFetch('/orders', { method:'POST', body:draft });
         return normalizeBackendOrder(raw);
       }
-      await wait(300);
+      await wait(105);
       const order = Object.assign({}, draft, {
         id: 'ORD' + Date.now(),
         placedAt: Date.now(),
@@ -5147,7 +5366,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       // MOCK — no backend to defer to, so this mirrors the server logic
       // locally (same cancellationPolicyFor() the preview screen already
       // uses) rather than trusting arbitrary client state.
-      await wait(300);
+      await wait(105);
       const o = findOrder(orderId);
       const policy = cancellationPolicyFor(o);
       if(!policy.cancellable) throw new Error(policy.reasonBlocked);
@@ -5161,7 +5380,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       if(API_BASE_URL){
         return apiFetch('/orders/'+orderId+'/review', { method:'POST', body:{ rating, comment: comment || undefined } });
       }
-      await wait(300);
+      await wait(105);
       return { rating, comment: comment || null };
     }
   };
@@ -5177,7 +5396,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     },
     async create(ticket){
       if(!API_BASE_URL){
-        await wait(250);
+        await wait(88);
         return ticket;
       }
       return apiFetch('/support/tickets', { method:'POST', body:{ category: ticket.category, message: ticket.message, orderId: ticket.orderId || null } });
@@ -5243,7 +5462,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   }
   function orderCardHTML(o){
     const vendor = findVendor(o.vendorId);
-    const emoji = vendor ? vendor.emoji : '🧾';
+    const emoji = vendor ? vendor.emoji : '';
     const itemsLine = o.items.map(i=>`${i.qty}× ${i.name}`).join(', ');
     const date = new Date(o.placedAt).toLocaleDateString('en-IN', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
     return `
@@ -5287,10 +5506,10 @@ html[data-api="real"] .demo-hint{ display:none !important; }
 
     if(list.length === 0){
       const emptyCopy = {
-        active:['🧾','No active orders','Your ongoing orders will show up here.'],
-        past:['📦','No past orders yet','Your completed orders will show up here.'],
-        cancelled:['🚫','No cancelled orders',''],
-        refunded:['↩️','No refunds yet','']
+        active:['<svg class="i" aria-hidden="true"><use href="#i-receipt"/></svg>','No active orders','Your ongoing orders will show up here.'],
+        past:['<svg class="i" aria-hidden="true"><use href="#i-package"/></svg>','No past orders yet','Your completed orders will show up here.'],
+        cancelled:['<svg class="i" aria-hidden="true"><use href="#i-x"/></svg>','No cancelled orders',''],
+        refunded:['<svg class="i" aria-hidden="true"><use href="#i-undo"/></svg>','No refunds yet','']
       }[orderTab];
       wrap.innerHTML = `<div class="order-empty"><div class="em">${emptyCopy[0]}</div><h3>${emptyCopy[1]}</h3><p>${emptyCopy[2]}</p></div>`;
       return;
@@ -5650,7 +5869,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   }
   function renderSupportTickets(wrap){
     if(App.state.supportTickets.length === 0){
-      wrap.innerHTML = `<div class="order-empty"><div class="em">🎫</div><h3>No tickets yet</h3><p>Reach out from the Contact us tab and we'll get back to you.</p></div>`;
+      wrap.innerHTML = `<div class="order-empty"><div class="em"><svg class="i" aria-hidden="true"><use href="#i-help"/></svg></div><h3>No tickets yet</h3><p>Reach out from the Contact us tab and we'll get back to you.</p></div>`;
       return;
     }
     wrap.innerHTML = App.state.supportTickets.map(t => `
@@ -5723,10 +5942,10 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   // =========================================================================
   const CATS = {
     food: [
-      {name:'Tiffin', emoji:'🍱'}, {name:'Fast Food', emoji:'🍔'}, {name:'North Indian', emoji:'🍗'}, {name:'Desserts', emoji:'🍨'}
+      {name:'Tiffin', emoji:''}, {name:'Fast Food', emoji:''}, {name:'North Indian', emoji:''}, {name:'Desserts', emoji:''}
     ],
     grocery: [
-      {name:'Bread', emoji:'🍞'}, {name:'Fruits', emoji:'🍎'}, {name:'Vegetables', emoji:'🥦'}, {name:'Dairy', emoji:'🧀'}
+      {name:'Bread', emoji:''}, {name:'Fruits', emoji:''}, {name:'Vegetables', emoji:''}, {name:'Dairy', emoji:''}
     ]
   };
 
@@ -5741,50 +5960,50 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   // object itself — so that swap is enough; no other call site needed to
   // change. Left as the seed data in mock mode (API_BASE_URL === null).
   let VENDORS = [
-    { id:'v_hk', mode:'food', name:'Home Kitchen', emoji:'🍱', tags:['Tiffin','Fast Food','North Indian'], rating:4.6, distanceKm:1.2, etaMin:20, etaMax:30, isOpen:true, offer:'20% OFF up to ₹60' },
-    { id:'v_pr', mode:'food', name:'Punjabi Rasoi', emoji:'🍗', tags:['Tiffin','North Indian'], rating:4.8, distanceKm:2.4, etaMin:25, etaMax:35, isOpen:true, offer:'Free delivery above ₹199' },
-    { id:'v_dc', mode:'food', name:'Delhi Chaat Co.', emoji:'🥙', tags:['Fast Food'], rating:4.5, distanceKm:0.8, etaMin:15, etaMax:25, isOpen:false, offer:null },
-    { id:'v_sw', mode:'food', name:'Sundar Sweets', emoji:'🍮', tags:['Desserts'], rating:4.7, distanceKm:3.1, etaMin:30, etaMax:40, isOpen:true, offer:'10% OFF' },
-    { id:'v_fm', mode:'grocery', name:'Fresh Mart', emoji:'🥬', tags:['Bread','Dairy'], rating:4.4, distanceKm:1.0, etaMin:15, etaMax:20, isOpen:true, offer:'₹50 OFF above ₹499' },
-    { id:'v_dg', mode:'grocery', name:'Daily Greens', emoji:'🥦', tags:['Fruits','Vegetables'], rating:4.5, distanceKm:1.7, etaMin:20, etaMax:30, isOpen:true, offer:null },
-    { id:'v_qb', mode:'grocery', name:'QuickBasket', emoji:'🧺', tags:['Bread','Fruits','Vegetables','Dairy'], rating:4.3, distanceKm:2.5, etaMin:10, etaMax:15, isOpen:true, offer:'Instant delivery' }
+    { id:'v_hk', mode:'food', name:'Home Kitchen', emoji:'', tags:['Tiffin','Fast Food','North Indian'], rating:4.6, distanceKm:1.2, etaMin:20, etaMax:30, isOpen:true, offer:'20% OFF up to ₹60' },
+    { id:'v_pr', mode:'food', name:'Punjabi Rasoi', emoji:'', tags:['Tiffin','North Indian'], rating:4.8, distanceKm:2.4, etaMin:25, etaMax:35, isOpen:true, offer:'Free delivery above ₹199' },
+    { id:'v_dc', mode:'food', name:'Delhi Chaat Co.', emoji:'', tags:['Fast Food'], rating:4.5, distanceKm:0.8, etaMin:15, etaMax:25, isOpen:false, offer:null },
+    { id:'v_sw', mode:'food', name:'Sundar Sweets', emoji:'', tags:['Desserts'], rating:4.7, distanceKm:3.1, etaMin:30, etaMax:40, isOpen:true, offer:'10% OFF' },
+    { id:'v_fm', mode:'grocery', name:'Fresh Mart', emoji:'', tags:['Bread','Dairy'], rating:4.4, distanceKm:1.0, etaMin:15, etaMax:20, isOpen:true, offer:'₹50 OFF above ₹499' },
+    { id:'v_dg', mode:'grocery', name:'Daily Greens', emoji:'', tags:['Fruits','Vegetables'], rating:4.5, distanceKm:1.7, etaMin:20, etaMax:30, isOpen:true, offer:null },
+    { id:'v_qb', mode:'grocery', name:'QuickBasket', emoji:'', tags:['Bread','Fruits','Vegetables','Dairy'], rating:4.3, distanceKm:2.5, etaMin:10, etaMax:15, isOpen:true, offer:'Instant delivery' }
   ];
 
   let PRODUCTS = [
     // ---- FOOD ----
-    {id:'p1', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Dal Do Pyaza', price:109, emoji:'🍛', off:'20% off', desc:'Home-style dal tempered with onions, served with steamed rice.', stock:'in', addons:[{name:'Extra roti',price:15},{name:'Papad',price:10},{name:'Pickle',price:5}]},
-    {id:'p2', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Rajma Chawal', price:119, emoji:'🍚', desc:'Slow-cooked kidney bean curry with steamed basmati rice.', stock:'in', addons:[{name:'Extra roti',price:15},{name:'Papad',price:10}]},
-    {id:'p3', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Roti Sabzi Set', price:99, emoji:'🫓', desc:'Four tawa rotis with a seasonal vegetable curry.', stock:'low', addons:[{name:'Extra roti',price:15}]},
-    {id:'p4', mode:'food', vendorId:'v_pr', category:'Tiffin', name:'Paneer Thali', price:149, emoji:'🍛', desc:'Paneer butter masala, dal, rice, roti and salad.', stock:'in', addons:[{name:'Extra paneer',price:40}]},
-    {id:'p5', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Aloo Tikki Burger', price:99, emoji:'🍔', off:'30% off', desc:'Crispy potato patty burger with mint chutney.', stock:'in', addons:[{name:'Extra cheese',price:20},{name:'Add fries',price:49}]},
-    {id:'p6', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Masala Fries', price:79, emoji:'🍟', desc:'Crispy fries tossed in tangy chaat masala.', stock:'in'},
-    {id:'p7', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Veg Frankie Roll', price:89, emoji:'🌯', desc:'Rolled paratha with spiced vegetables and chutney.', stock:'out'},
-    {id:'p8', mode:'food', vendorId:'v_hk', category:'Fast Food', name:'Pav Bhaji', price:119, emoji:'🍲', desc:'Buttery mashed vegetable curry with toasted pav.', stock:'in'},
-    {id:'p9', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Chole Bhature', price:129, emoji:'🍛', desc:'Spiced chickpea curry with fluffy fried bread.', stock:'in'},
-    {id:'p10', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Amritsari Kulcha', price:109, emoji:'🫓', desc:'Stuffed kulcha with butter, served with chole.', stock:'in'},
-    {id:'p11', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Butter Chicken', price:229, emoji:'🍗', desc:'Creamy tomato-butter chicken curry.', stock:'in', addons:[{name:'Extra gravy',price:35},{name:'Butter naan',price:40}]},
-    {id:'p12', mode:'food', vendorId:'v_hk', category:'North Indian', name:'Tandoori Roti Set', price:69, emoji:'🫓', desc:'Four tandoori rotis with dal tadka.', stock:'in'},
-    {id:'p13', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Gulab Jamun', price:69, emoji:'🍮', off:'10% off', desc:'Soft milk dumplings soaked in rose syrup.', stock:'in'},
-    {id:'p14', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Rasmalai', price:99, emoji:'🍮', desc:'Cottage-cheese discs in sweetened saffron milk.', stock:'in'},
-    {id:'p15', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Kaju Katli', price:149, emoji:'🍬', desc:'Diamond-cut cashew fudge with silver leaf.', stock:'low'},
-    {id:'p16', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Gajar Halwa', price:89, emoji:'🥕', desc:'Slow-cooked carrot pudding with ghee and nuts.', stock:'in'},
+    {id:'p1', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Dal Do Pyaza', price:109, emoji:'', off:'20% off', desc:'Home-style dal tempered with onions, served with steamed rice.', stock:'in', addons:[{name:'Extra roti',price:15},{name:'Papad',price:10},{name:'Pickle',price:5}]},
+    {id:'p2', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Rajma Chawal', price:119, emoji:'', desc:'Slow-cooked kidney bean curry with steamed basmati rice.', stock:'in', addons:[{name:'Extra roti',price:15},{name:'Papad',price:10}]},
+    {id:'p3', mode:'food', vendorId:'v_hk', category:'Tiffin', name:'Roti Sabzi Set', price:99, emoji:'', desc:'Four tawa rotis with a seasonal vegetable curry.', stock:'low', addons:[{name:'Extra roti',price:15}]},
+    {id:'p4', mode:'food', vendorId:'v_pr', category:'Tiffin', name:'Paneer Thali', price:149, emoji:'', desc:'Paneer butter masala, dal, rice, roti and salad.', stock:'in', addons:[{name:'Extra paneer',price:40}]},
+    {id:'p5', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Aloo Tikki Burger', price:99, emoji:'', off:'30% off', desc:'Crispy potato patty burger with mint chutney.', stock:'in', addons:[{name:'Extra cheese',price:20},{name:'Add fries',price:49}]},
+    {id:'p6', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Masala Fries', price:79, emoji:'', desc:'Crispy fries tossed in tangy chaat masala.', stock:'in'},
+    {id:'p7', mode:'food', vendorId:'v_dc', category:'Fast Food', name:'Veg Frankie Roll', price:89, emoji:'', desc:'Rolled paratha with spiced vegetables and chutney.', stock:'out'},
+    {id:'p8', mode:'food', vendorId:'v_hk', category:'Fast Food', name:'Pav Bhaji', price:119, emoji:'', desc:'Buttery mashed vegetable curry with toasted pav.', stock:'in'},
+    {id:'p9', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Chole Bhature', price:129, emoji:'', desc:'Spiced chickpea curry with fluffy fried bread.', stock:'in'},
+    {id:'p10', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Amritsari Kulcha', price:109, emoji:'', desc:'Stuffed kulcha with butter, served with chole.', stock:'in'},
+    {id:'p11', mode:'food', vendorId:'v_pr', category:'North Indian', name:'Butter Chicken', price:229, emoji:'', desc:'Creamy tomato-butter chicken curry.', stock:'in', addons:[{name:'Extra gravy',price:35},{name:'Butter naan',price:40}]},
+    {id:'p12', mode:'food', vendorId:'v_hk', category:'North Indian', name:'Tandoori Roti Set', price:69, emoji:'', desc:'Four tandoori rotis with dal tadka.', stock:'in'},
+    {id:'p13', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Gulab Jamun', price:69, emoji:'', off:'10% off', desc:'Soft milk dumplings soaked in rose syrup.', stock:'in'},
+    {id:'p14', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Rasmalai', price:99, emoji:'', desc:'Cottage-cheese discs in sweetened saffron milk.', stock:'in'},
+    {id:'p15', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Kaju Katli', price:149, emoji:'', desc:'Diamond-cut cashew fudge with silver leaf.', stock:'low'},
+    {id:'p16', mode:'food', vendorId:'v_sw', category:'Desserts', name:'Gajar Halwa', price:89, emoji:'', desc:'Slow-cooked carrot pudding with ghee and nuts.', stock:'in'},
     // ---- GROCERY ----
-    {id:'g1', mode:'grocery', vendorId:'v_fm', category:'Bread', name:'Agege Bread', price:80.99, emoji:'🥐', off:'10% off', desc:'Soft, lightly sweet West-African style loaf.', stock:'in'},
-    {id:'g2', mode:'grocery', vendorId:'v_fm', category:'Bread', name:'Toast Bread', price:45.99, emoji:'🍞', desc:'Everyday sandwich bread, sliced.', stock:'in'},
-    {id:'g3', mode:'grocery', vendorId:'v_qb', category:'Bread', name:'Multigrain Bread', price:52.99, emoji:'🥖', desc:'Whole-grain loaf with seeds.', stock:'in'},
-    {id:'g4', mode:'grocery', vendorId:'v_qb', category:'Bread', name:'Wheat Bread', price:16.99, emoji:'🍞', desc:'Soft whole-wheat sandwich bread.', stock:'low'},
-    {id:'g5', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Red Apples', price:99.00, emoji:'🍎', desc:'Crisp, hand-picked red apples (1 kg).', stock:'in'},
-    {id:'g6', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Bananas', price:39.00, emoji:'🍌', desc:'Farm-fresh bananas (dozen).', stock:'in'},
-    {id:'g7', mode:'grocery', vendorId:'v_qb', category:'Fruits', name:'Oranges', price:69.00, emoji:'🍊', desc:'Juicy oranges (1 kg).', stock:'in'},
-    {id:'g8', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Grapes', price:129.00, emoji:'🍇', off:'15% off', desc:'Seedless green grapes (500 g).', stock:'out'},
-    {id:'g9', mode:'grocery', vendorId:'v_dg', category:'Vegetables', name:'Broccoli', price:59.00, emoji:'🥦', desc:'Fresh broccoli florets (500 g).', stock:'in'},
-    {id:'g10', mode:'grocery', vendorId:'v_dg', category:'Vegetables', name:'Carrots', price:29.00, emoji:'🥕', desc:'Crunchy carrots (500 g).', stock:'in'},
-    {id:'g11', mode:'grocery', vendorId:'v_qb', category:'Vegetables', name:'Tomatoes', price:35.00, emoji:'🍅', desc:'Ripe, juicy tomatoes (1 kg).', stock:'in'},
-    {id:'g12', mode:'grocery', vendorId:'v_qb', category:'Vegetables', name:'Onions', price:28.00, emoji:'🧅', desc:'Fresh onions (1 kg).', stock:'low'},
-    {id:'g13', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Cheddar Cheese', price:149.00, emoji:'🧀', desc:'Aged cheddar block (200 g).', stock:'in'},
-    {id:'g14', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Farm Milk', price:58.00, emoji:'🥛', desc:'Fresh full-cream milk (1 L).', stock:'in'},
-    {id:'g15', mode:'grocery', vendorId:'v_qb', category:'Dairy', name:'Butter', price:89.00, emoji:'🧈', desc:'Salted table butter (200 g).', stock:'in'},
-    {id:'g16', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Yoghurt', price:42.00, emoji:'🍦', desc:'Thick set curd (400 g).', stock:'in'}
+    {id:'g1', mode:'grocery', vendorId:'v_fm', category:'Bread', name:'Agege Bread', price:80.99, emoji:'', off:'10% off', desc:'Soft, lightly sweet West-African style loaf.', stock:'in'},
+    {id:'g2', mode:'grocery', vendorId:'v_fm', category:'Bread', name:'Toast Bread', price:45.99, emoji:'', desc:'Everyday sandwich bread, sliced.', stock:'in'},
+    {id:'g3', mode:'grocery', vendorId:'v_qb', category:'Bread', name:'Multigrain Bread', price:52.99, emoji:'', desc:'Whole-grain loaf with seeds.', stock:'in'},
+    {id:'g4', mode:'grocery', vendorId:'v_qb', category:'Bread', name:'Wheat Bread', price:16.99, emoji:'', desc:'Soft whole-wheat sandwich bread.', stock:'low'},
+    {id:'g5', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Red Apples', price:99.00, emoji:'', desc:'Crisp, hand-picked red apples (1 kg).', stock:'in'},
+    {id:'g6', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Bananas', price:39.00, emoji:'', desc:'Farm-fresh bananas (dozen).', stock:'in'},
+    {id:'g7', mode:'grocery', vendorId:'v_qb', category:'Fruits', name:'Oranges', price:69.00, emoji:'', desc:'Juicy oranges (1 kg).', stock:'in'},
+    {id:'g8', mode:'grocery', vendorId:'v_dg', category:'Fruits', name:'Grapes', price:129.00, emoji:'', off:'15% off', desc:'Seedless green grapes (500 g).', stock:'out'},
+    {id:'g9', mode:'grocery', vendorId:'v_dg', category:'Vegetables', name:'Broccoli', price:59.00, emoji:'', desc:'Fresh broccoli florets (500 g).', stock:'in'},
+    {id:'g10', mode:'grocery', vendorId:'v_dg', category:'Vegetables', name:'Carrots', price:29.00, emoji:'', desc:'Crunchy carrots (500 g).', stock:'in'},
+    {id:'g11', mode:'grocery', vendorId:'v_qb', category:'Vegetables', name:'Tomatoes', price:35.00, emoji:'', desc:'Ripe, juicy tomatoes (1 kg).', stock:'in'},
+    {id:'g12', mode:'grocery', vendorId:'v_qb', category:'Vegetables', name:'Onions', price:28.00, emoji:'', desc:'Fresh onions (1 kg).', stock:'low'},
+    {id:'g13', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Cheddar Cheese', price:149.00, emoji:'', desc:'Aged cheddar block (200 g).', stock:'in'},
+    {id:'g14', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Farm Milk', price:58.00, emoji:'', desc:'Fresh full-cream milk (1 L).', stock:'in'},
+    {id:'g15', mode:'grocery', vendorId:'v_qb', category:'Dairy', name:'Butter', price:89.00, emoji:'', desc:'Salted table butter (200 g).', stock:'in'},
+    {id:'g16', mode:'grocery', vendorId:'v_fm', category:'Dairy', name:'Yoghurt', price:42.00, emoji:'', desc:'Thick set curd (400 g).', stock:'in'}
   ];
 
   function findVendor(id){ return VENDORS.find(v=>v.id===id); }
@@ -5803,7 +6022,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
         </div>
         <div class="info">
           <h4>${v.name}</h4>
-          <div class="meta">⭐ ${v.rating} · ${v.distanceKm} km · ${v.etaMin}-${v.etaMax} min</div>
+          <div class="meta"><svg class="i rt" aria-hidden="true"><use href="#i-star"/></svg> ${v.rating} · ${v.distanceKm} km · ${v.etaMin}-${v.etaMax} min</div>
         </div>
       </div>`;
   }
@@ -5891,9 +6110,9 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       <h2>${v.name}</h2>
       <div class="meta-row">
         <span class="open-badge ${v.isOpen?'open':'closed'}">${v.isOpen?'Open now':'Closed'}</span>
-        <span>⭐ ${v.rating}</span><span>·</span><span>${v.distanceKm} km away</span><span>·</span><span>${v.etaMin}-${v.etaMax} min</span>
+        <span><svg class="i rt" aria-hidden="true"><use href="#i-star"/></svg> ${v.rating}</span><span>·</span><span>${v.distanceKm} km away</span><span>·</span><span>${v.etaMin}-${v.etaMax} min</span>
       </div>
-      ${v.offer ? `<div class="offer-banner">🏷️ ${v.offer}</div>` : ''}
+      ${v.offer ? `<div class="offer-banner"><svg class="i i-xs" aria-hidden="true"><use href="#i-tag"/></svg> ${v.offer}</div>` : ''}
     `;
 
     const deliverySection = document.getElementById('vendorDeliveryTypeSection');
@@ -5948,8 +6167,8 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     wrap.innerHTML = `
       <div class="section-head" style="padding:0 22px"><h3>Delivery</h3></div>
       <div class="delivery-type-row">
-        <div class="opt ${dt==='instant'?'on':''}" onclick="setDeliveryType('instant')">⚡ Instant delivery</div>
-        <div class="opt ${dt==='scheduled'?'on':''}" onclick="setDeliveryType('scheduled')">📅 Schedule for later</div>
+        <div class="opt ${dt==='instant'?'on':''}" onclick="setDeliveryType('instant')"><svg class="i i-xs" aria-hidden="true"><use href="#i-bolt"/></svg> Instant delivery</div>
+        <div class="opt ${dt==='scheduled'?'on':''}" onclick="setDeliveryType('scheduled')"><svg class="i i-xs" aria-hidden="true"><use href="#i-calendar"/></svg> Schedule for later</div>
       </div>
       ${dt==='scheduled' ? `
         <div class="schedule-picker">
@@ -6189,7 +6408,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
   function onSearchInput(){
     clearTimeout(searchDebounceTimer);
     const q = document.getElementById('searchInput').value;
-    searchDebounceTimer = setTimeout(()=>renderSearchResults(q), 300);
+    searchDebounceTimer = setTimeout(()=>renderSearchResults(q), 150);
   }
   function setSearchSort(sort){
     searchSort = sort;
@@ -6214,11 +6433,11 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     else if(searchSort==='price'){ items = [...items].sort((a,b)=>a.price-b.price); }
 
     if(!q && searchSort==='relevance'){
-      resultsEl.innerHTML = `<div class="search-empty"><div class="em">🔎</div><h3>Search for ${mode==='food'?'restaurants or dishes':'stores or products'}</h3><p>Try "${mode==='food'?'Butter Chicken':'Bread'}"</p></div>`;
+      resultsEl.innerHTML = `<div class="search-empty"><div class="em"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></div><h3>Search for ${mode==='food'?'restaurants or dishes':'stores or products'}</h3><p>Try "${mode==='food'?'Butter Chicken':'Bread'}"</p></div>`;
       return;
     }
     if(vendors.length===0 && items.length===0){
-      resultsEl.innerHTML = `<div class="search-empty"><div class="em">🍽️</div><h3>No results</h3><p>Try a different search term.</p></div>`;
+      resultsEl.innerHTML = `<div class="search-empty"><div class="em"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></div><h3>No results</h3><p>Try a different search term.</p></div>`;
       return;
     }
     let html = '';
@@ -6227,7 +6446,7 @@ html[data-api="real"] .demo-hint{ display:none !important; }
       html += vendors.map(v => `
         <div class="search-result-vendor" onclick="openVendor('${v.id}')">
           <div class="em">${v.emoji}</div>
-          <div><h4>${v.name}</h4><p>⭐ ${v.rating} · ${v.distanceKm} km · ${v.isOpen?'Open now':'Closed'}</p></div>
+          <div><h4>${v.name}</h4><p><svg class="i rt" aria-hidden="true"><use href="#i-star"/></svg> ${v.rating} · ${v.distanceKm} km · ${v.isOpen?'Open now':'Closed'}</p></div>
         </div>`).join('');
     }
     if(items.length){
@@ -6273,6 +6492,26 @@ html[data-api="real"] .demo-hint{ display:none !important; }
     goTo('home');
   }
   function skipPreference(){ goTo('home'); }
+  /* ---- UI polish: toast + 3D press-tilt on cards ---- */
+  (function(){
+    var toastEl, toastT;
+    window.swizToast = function(msg){
+      if(!toastEl){ toastEl = document.createElement('div'); toastEl.className = 'swiz-toast'; toastEl.setAttribute('role','status'); toastEl.setAttribute('aria-live','polite'); document.body.appendChild(toastEl); }
+      toastEl.textContent = msg; void toastEl.offsetWidth; toastEl.classList.add('show');
+      clearTimeout(toastT); toastT = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+    };
+    if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var SEL = '.food-card,.gcard,.vendor-card,.flash-card,.cart-item,.order-card,.addr-card,.sw-pref-card,.profile-orders,.notif-row,.vendor-item-row,.search-result-vendor';
+    var cur = null, raf = 0;
+    function tilt(el, e){
+      var r = el.getBoundingClientRect(), px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
+      el.style.setProperty('--ry', (px * 9).toFixed(2) + 'deg'); el.style.setProperty('--rx', (-py * 9).toFixed(2) + 'deg');
+    }
+    document.addEventListener('pointerdown', function(e){ var el = e.target.closest && e.target.closest(SEL); if(!el) return; cur = el; el.classList.add('is-pressed'); tilt(el, e); }, { passive:true });
+    document.addEventListener('pointermove', function(e){ if(!cur || raf) return; raf = requestAnimationFrame(function(){ raf = 0; if(cur) tilt(cur, e); }); }, { passive:true });
+    function end(){ if(!cur) return; cur.classList.remove('is-pressed'); cur.style.removeProperty('--rx'); cur.style.removeProperty('--ry'); cur = null; }
+    document.addEventListener('pointerup', end, { passive:true }); document.addEventListener('pointercancel', end, { passive:true });
+  })();
   /* lets CSS hide demo-only notes once a real backend is configured */
   document.documentElement.setAttribute('data-api', API_BASE_URL ? 'real' : 'mock');
   document.addEventListener('change', function(e){
